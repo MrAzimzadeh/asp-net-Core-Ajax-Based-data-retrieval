@@ -1,0 +1,13 @@
+﻿@{
+    Layout = null;
+
+}
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<h1>Create </h1>
+<button id="btnGonder">Gonder </button>
+<script>
+    $("#btnGonder").click(() => {
+        $.post("https://localhost:7256/home/verial", { b : " a  data  ", a: "B data " });
+    })
+</script>
